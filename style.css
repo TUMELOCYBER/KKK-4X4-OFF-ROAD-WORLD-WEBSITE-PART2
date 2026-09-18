@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.orange-title {
+    color: #ff6f00; /* Standard orange, or use your preferred hex code */
+}
+
+
+body{
+    background-color: #28282B;
+    color: #000000;
+    line-height: 1.6;
+} 
+/* Target the text inside your product cards */
+.product-card h3,
+.product-card p {
+  color: #ffffff !important;
+} 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: #ff6f00;
+    border-bottom: 1px solid #2a2438;
+    position: sticky;
+    top: 0;
+    z-index: 100%;
+} 
+.nav-link{
+    cursor: pointer;
+}
+.nav-links a:hover{
+    color: #28282B;
+    transition: 0.3s;
+} 
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Pushes the links to fill the entire horizontal space */
+  align-items: center;            /* Vertically centers the text if needed */
+  width: 100%;                    /* Ensures the navbar takes up the full width */
+}
+/* 1. Target the nav container bar */
+.footer-nav {
+  width: 100%;
+  background-color: #ff6f00;       /* Replace with your exact orange hex code */
+  padding: 15px 0;                 /* Vertical padding for height */
+}
+
+/* 2. Style the Unordered List (ul) to lay items out side-by-side */
+.footer-nav ul {
+  display: flex;
+  justify-content: space-between;  /* Spreads the items evenly edge-to-edge */
+  align-items: center;
+  list-style-type: none;           /* Removes the bullet points */
+  margin: 0;
+  padding: 0 40px;                 /* Adds clean padding on the left and right ends */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 3. Give each list item equal growing room */
+.footer-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+/* 4. Style the anchor links (a) to look like your nav bar */
+.footer-nav ul li a {
+  color: #ffffff;                  /* White text */
+  text-decoration: none;           /* Removes link underline */
+  font-weight: bold;               /* Bold text */
+  text-transform: uppercase;      /* Forces uppercase lettering */
+  font-size: 14px;                 /* Adjust size to match top navbar */
+  font-family: sans-serif;         
+  display: inline-block;
+}
+.footer-nav ul li a:hover {
+  background-color: rgba(22, 22, 22, 0.2); /* Creates a subtle white glow block around the link */
+  padding: 5px 10px;
+  border-radius: 4px; 
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+} 
+/* Ensure the page stretches to full viewport height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #28282B; /* Dark background matching your theme */
+  font-family: sans-serif;
+}
+
+/* Force the main layout container to fill the screen */
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Target your exact HTML class to stretch across the page */
+.about-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Spaced neatly across the page */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  gap: 25px;
+}
+
+/* Format elements into individual block sections */
+.about-section h1,
+.about-section h2 {
+  color: #ff6f00; /* Distinct orange headers */
+  margin: 0 0 10px 0;
+}
+
+/* Style the body text and list blocks to fill out and have orange borders */
+.about-section p,
+.about-section ul {
+  background-color: #28282B; /* Dark block container background */
+  color: #ffffff;            /* White text inside the block */
+  border: 3px solid #ff6f00; /* Thick orange borders */
+  padding: 25px;
+  border-radius: 8px;        /* Smooths out the corners of your blocks */
+  margin: 0;
+  list-style-position: inside; /* Keeps list bullets inside the orange border */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Optional adjustment for individual list items */
+.about-section ul li {
+  margin-bottom: 10px;
+}
+.about-section ul li:last-child {
+  margin-bottom: 0;
+} 
+/* target the entire contact section wrapper */
+.contact-section {
+    color: #ffffff !important; /* Forces all text to be pure white */
+}
+
+/* expand specific titles and main headings */
+.contact-section h2, 
+.contact-section strong {
+    color: #ffffff;
+    font-size: 1.8rem;      /* Enlarges the text size */
+    letter-spacing: 0.05em; /* Spreads out / expands the characters */
+    font-weight: 700;
+}
+
+/* format paragraph tags and form labels */
+.contact-section p, 
+.contact-section label {
+    color: #ffffff;
+    font-size: 1.1rem;      /* Makes regular descriptive text slightly larger */
+    letter-spacing: 0.02em; /* Subtle expansion for universal readability */
+    line-height: 1.6;       /* Adds vertical space between line jumps */
+}
+.contact-form label, 
+.contact-form input {
+    display: block; /* Pushes every element onto its own unique line naturally */
+    width: 100%;
+}
+/* Creates the container outline blocks matching your About page layout */
+.service-card {
+    border: 2px solid #e67e22; /* High-visibility orange border stroke */
+    border-radius: 8px;        /* Smooth rounded structural corners */
+    padding: 24px;             /* Interior breathing room for card contents */
+    margin-bottom: 25px;       /* Consistent spacing blocks between columns */
+    background: transparent;   /* Retains dark background profile integrity */
+}
+
+/* Forces all card headers into bold expanded white letters */
+.service-card h2 {
+    color: #ffffff !important;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;    /* Expands letters horizontally */
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Modifies description sentences into high-visibility clean text formats */
+.service-card p {
+    color: #ffffff !important;
+    font-size: 1.05rem;
+    line-height: 1.6;          /* Generates vertical sentence padding lines */
+    letter-spacing: 0.02em;    /* Subtle expansive layout tracking adjustments */
+    margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight:900;
+    font-size:28px;
+    letter-spacing: -1px;
+}
+
+.logo-image{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #dbd8e3;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#dbd8e3;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+} 
+
+
+/* Container for the entire hero screen */
+/* Container for the entire hero screen */
+/* 1. Ensure the parent section spans full width and has no side padding blocking the edge */
+#home, .hero-section {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling bars */
+}
+
+/* 2. Make the container hold the elements cleanly */
+.hero-content {
+  width: 90%;           /* Adds breathing room on both sides of the screen */
+  max-width: 800px;     /* Restricts the total width so it doesn't get too wide */
+  margin: 0 auto;       /* Centers the container horizontally on the screen */
+  display: flex;        /* Activates layout controls */
+  flex-direction: column; /* Stacks text, image, and button vertically */
+  align-items: center;  /* Centers all elements horizontally inside the container */
+  text-align: center;   /* Centers the text lines */
+  gap: 20px;            /* Adds uniform space between text, image, and button */
+}
+
+
+
+/* 1. Arrange the images side-by-side */
+.image-gallery {
+  display: flex;          
+  flex-direction: row;    
+  justify-content: center;
+  gap: 15px;              /* Adds space between the two pictures */
+  width: 100%;            
+  max-width: 900px;       
+  margin: 20px 0;         
+}
+
+/* Ensure the content container allows full expansion */
+.hero-content {
+  width: 100%;
+  height: 100%; /* Or set a specific height like 500px depending on layout */
+}
+.hero-content h1 {
+    color: #FF6600; /* Vibrant automotive orange */
+    font-weight: 800; /* Makes the text bold */
+    font-family: 'Impact', 'Arial Black', sans-serif; /* A strong, appealing font for a 4x4 theme */
+    text-transform: uppercase;
+}
+.hero-content p {
+    color: #FF6600; /* Vibrant automotive orange */
+    font-weight: 700; /* Bold style */
+    font-family: 'Arial Black', 'Montserrat', sans-serif; /* Clean, bold font that balances well with the heading */
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Slightly increases spacing for professional readability */
+}
+
+
+
+/* Force the image to stretch and completely fill the parent box */
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Crops edges slightly to prevent image distortion */
+}
+
+
+
+
+
+/* Rugged, high-visibility modification button */
+.hero-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #121413;
+  /* Aggressive off-road orange accent */
+  background-color: #ff6f00; 
+  border: 2px solid #ff6f00;
+  border-radius: 4px; /* Angular, blocky cuts look tougher than round pills */
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 111, 0, 0.25);
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* High-contrast hover state */
+.hero-btn:hover {
+  background-color: transparent;
+  color: #ff6f00;
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(255, 111, 0, 0.4);
+}
+.product-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Adjust as needed */
+    border-radius: 8px;
+    margin-bottom: 10px;
+} 
+/* 1. MAIN GRID WRAPPER */
+.product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;                  /* Clean, spacious gap between store items */
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #28282B;  /* Soft store background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. MATCHING HEIGHT PRODUCT CARDS */
+.product-card {
+    display: flex;
+    flex-direction: column;     /* Stacks card content vertically */
+    flex: 1 1 280px;
+    max-width: 320px;
+    background-color: #28282B;
+    border: 1px solid #28282B;
+    border-radius: 12px;        /* Modern, rounded corners */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    
+    /* Smooth transition for the interactive shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Premium Hover Effect */
+.product-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+    border-color: #cbd5e1;
+}
+
+/* 3. UNIFORM STORE IMAGES */
+.product-image {
+    width: 100%;
+    height: 180px;             /* Forces all images to share the exact same height */
+    object-fit: contain;       /* Prevents images from stretching or distortion */
+    margin-bottom: 16px;
+    background-color: #f8fafc; /* Subtle placeholder background for transparent product images */
+    border-radius: 8px;
+}
+
+/* 4. TYPOGRAPHY AND CONTENT BALANCING */
+.product-card h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+}
+
+/* Forces the price and button to stay at the very bottom */
+.product-card p:nth-of-type(2) {
+    margin-top: auto;          /* Pushes price & button down if text above is short */
+    font-size: 1.15rem;
+    color: #0f172a;
+}
+
+/* 5. MODERN STORE BUTTONS */
+.product-card button {
+    width: 100%;
+    background-color: #ff6f00; /* Vibrant eCommerce action blue */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(255, 111, 0, 0.4);
+}
+
+.product-card button:hover {
+    background-color: #282828; /* Darker blue on hover */
+} 
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6%;
+    background: #ff6f00;
+    border-bottom: 1px solid #2a2438;
+}
+
+
+@media(max-width:50px){
+    .nav-links{
+        padding:20px;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left:0;
+        width: 100%;
+        background: #ff6f00;
+        padding: 20px;
+        border-bottom: 1px solid #ff6f00;
+    }
+}
